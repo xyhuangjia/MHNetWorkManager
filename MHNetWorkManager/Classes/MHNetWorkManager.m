@@ -86,9 +86,12 @@ typedef NS_ENUM(NSInteger,MHRequestType) {
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",nil];
-//    NSString *token = [HXDataSessionHelper getToken];
-//    [manager.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
-//    [manager.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"User-Agent"];
+    NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
+    if (token) {
+        [manager.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
+    }
+    
+    [manager.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"User-Agent"];
     if (requestType == MHRequestTypeGET) {
         [manager GET:@"http://mobile.weather.com.cn/data/forecast/101010100.html?_=1381891660081"
           parameters:nil
@@ -112,9 +115,6 @@ typedef NS_ENUM(NSInteger,MHRequestType) {
               failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                   failureBlock(error);
               }];
-    }
-    
-    
-    
+    } 
 }
 @end
