@@ -17,7 +17,9 @@ typedef NS_ENUM(NSInteger,MHRequestType) {
 };
 
 @interface MHNetWorkManager()
+
 @end
+
 @implementation MHNetWorkManager
 
 
@@ -40,13 +42,24 @@ typedef NS_ENUM(NSInteger,MHRequestType) {
                FailureBlock:(FailureBlock)failureBlock{
     [self mockPostRequestWithPath:path
                       RequestType:MHRequestTypeGET
-                           IsMock:YES
+                           IsMock:NO
                          FilePath:nil
                            Params:params
                      SuccessBlock:successBlock
                      FailureBlock:failureBlock];
 }
 
+
+
+/**
+ <#Description#>
+
+ @param path <#path description#>
+ @param params <#params description#>
+ @param filePath <#filePath description#>
+ @param successBlock <#successBlock description#>
+ @param failureBlock <#failureBlock description#>
+ */
 + (void)postRequestWithPath:(NSString *)path
                      Params:(NSDictionary *)params
                    FilePath:(NSString *)filePath
