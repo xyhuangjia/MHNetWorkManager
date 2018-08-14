@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/xyhuangjia@foxmail.com/MHNetWorkManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xyhuangjia@foxmail.com' => 'xyhuangjia@gamil.com' }
+  s.author           = { 'huangjia' => 'xyhuangjia@gamil.com' }
   s.source           = { :git => 'https://github.com/xyhuangjia@foxmail.com/MHNetWorkManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~>  3.2.1'
+  s.dependency 'OHHTTPStubs', '~>  6.1.0'
 end

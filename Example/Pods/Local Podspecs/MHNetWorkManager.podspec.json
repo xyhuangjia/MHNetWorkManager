@@ -1,0 +1,30 @@
+{
+  "name": "MHNetWorkManager",
+  "version": "0.1.0",
+  "summary": "A short description of MHNetWorkManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xyhuangjia@foxmail.com/MHNetWorkManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xyhuangjia@foxmail.com": "xyhuangjia@gamil.com"
+  },
+  "source": {
+    "git": "https://github.com/xyhuangjia@foxmail.com/MHNetWorkManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MHNetWorkManager/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~>  3.2.1"
+    ],
+    "OHHTTPStubs": [
+      "~>  6.1.0"
+    ]
+  }
+}

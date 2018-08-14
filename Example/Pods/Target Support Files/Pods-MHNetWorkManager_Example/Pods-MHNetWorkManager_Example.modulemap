@@ -1,0 +1,6 @@
+framework module Pods_MHNetWorkManager_Example {
+  umbrella header "Pods-MHNetWorkManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

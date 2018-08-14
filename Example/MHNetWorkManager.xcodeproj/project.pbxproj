@@ -22,6 +22,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		712789942122B024007C2FE0 /* testresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 712789932122B024007C2FE0 /* testresponse.json */; };
+		716A333021216E930056BFA7 /* testresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 716A332F21216E930056BFA7 /* testresponse.json */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -57,8 +59,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		622FA177BD11B15768C6DE52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		689ACA66E4917B721264B38C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		622FA177BD11B15768C6DE52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		689ACA66E4917B721264B38C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		712789932122B024007C2FE0 /* testresponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testresponse.json; sourceTree = "<group>"; };
+		716A332F21216E930056BFA7 /* testresponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testresponse.json; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF04B0A1E6947DE3FA11BAD /* Pods-MHNetWorkManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHNetWorkManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHNetWorkManager_Tests/Pods-MHNetWorkManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83CA6EAF2CE7D2A301BC4578 /* Pods-MHNetWorkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHNetWorkManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHNetWorkManager_Example/Pods-MHNetWorkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		9493C4AC852764FE4F9DA10F /* Pods_MHNetWorkManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHNetWorkManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8D53165D2D76371B620F7D /* Pods-MHNetWorkManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHNetWorkManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHNetWorkManager_Example/Pods-MHNetWorkManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EAF43FA64D4904128BD334DD /* Pods_MHNetWorkManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHNetWorkManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA1476C57CE0A263D7C1292 /* MHNetWorkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MHNetWorkManager.podspec; path = ../MHNetWorkManager.podspec; sourceTree = "<group>"; };
+		FBA1476C57CE0A263D7C1292 /* MHNetWorkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MHNetWorkManager.podspec; path = ../MHNetWorkManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		6003F593195388D20070C39A /* Example for MHNetWorkManager */ = {
 			isa = PBXGroup;
 			children = (
+				712789932122B024007C2FE0 /* testresponse.json */,
 				6003F59C195388D20070C39A /* MHAppDelegate.h */,
 				6003F59D195388D20070C39A /* MHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -140,6 +145,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				716A332F21216E930056BFA7 /* testresponse.json */,
 			);
 			name = "Example for MHNetWorkManager";
 			path = MHNetWorkManager;
@@ -277,7 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712789942122B024007C2FE0 /* testresponse.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				716A333021216E930056BFA7 /* testresponse.json in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -356,11 +364,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MHNetWorkManager_Example/Pods-MHNetWorkManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MHNetWorkManager/MHNetWorkManager.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHNetWorkManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
